@@ -1,0 +1,84 @@
+.login-main-div {
+    background-image: url(../public/SignUp/sign-up-bg.png);
+    height: 100vh;
+    width: 100ve;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+  
+  .input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px;
+    gap: 15px;
+    border: 1px solid #ADB0CD;
+    padding-left: 10px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .icon {
+    padding: 10px;
+    color: #ADB0CD;
+    min-width: 50px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 0pc;
+    color: #ADB0CD;
+  }
+  
+  .input-field::placeholder{
+      color: #ADB0CD;
+  }
+  
+  .input-container:focus-visible{
+      border: 2px solid white
+  }
+  
+  .login-btn{
+      background-color: #FF6D2C;
+      width: 100%;
+      margin-top: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0px;
+      border-radius: 5px;
+      color: black;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover{
+      background-color: white;
+      color: #FF6D2C;
+  }
+  
+  .login-btn:active{
+      scale: 0.8;
+  }
+  
+  a:hover{
+      text-decoration: underline;
+  }
+  
+  .forgot-link{
+      margin-top: 5px;
+      color: #FF6D2C;
+      text-decoration: none;
+  }
+  
+  .sign-up-link{
+      color: #FF6D2C;
+      text-decoration: none;
+  }
+  
+  .divider{
+      border: 1px solid #ADB0CD;
+      height: 1px;
+  }

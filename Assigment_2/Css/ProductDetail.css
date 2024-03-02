@@ -1,0 +1,23 @@
+.product-tab.active{
+    color: #FF6D2C;
+    text-decoration: none;
+    border: 1px solid #FF6D2C;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.product-tab{
+    color: gray;
+    text-decoration: none;
+    border: 0px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.tab-container{
+    gap: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
