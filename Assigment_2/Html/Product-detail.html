@@ -27,7 +27,7 @@
     <!-- loader -->
     <div
       id="loader"
-      class="position-absolute bg-white"
+      class="position-absolute bg-white overflow-hidden"
       style="height: 100vh; width: 100%; display: block; overflow: hidden"
     >
       <div class="w-100 h-100 d-flex justify-content-center align-items-center">
@@ -164,7 +164,7 @@
           <ul style="list-style-type: none">
             <li class="text-secondary">Explore</li>
             <li class="text-white pt-3">
-              <a href="/Html/" class="nav-link">Blog</a>
+              <a href="/Html/Blog.html" class="nav-link">Blog</a>
             </li>
           </ul>
         </div>
@@ -181,21 +181,25 @@
         </div>
       </div>
       <div
-        class="d-flex justify-content-between border-top border-1 border-secondary pt-2"
+        class="border-top border-1 border-secondary pt-2"
       >
-        <p class="text-secondary">© 2022 Welcome. All right reserved.</p>
-        <div>
-          <img class="mx-2" src="../public/youtube.svg" alt="" />
-          <img class="mx-2" src="../public/twiiter.svg" alt="" />
-          <img class="mx-2" src="../public/linkdin.svg" alt="" />
+        <div class="mx-5 d-flex justify-content-between">
+          <p class="text-secondary">© 2022 Welcome. All right reserved.</p>
+          <div>
+            <img class="mx-2" src="../public/youtube.svg" alt="" />
+            <img class="mx-2" src="../public/twiiter.svg" alt="" />
+            <img class="mx-2" src="../public/linkdin.svg" alt="" />
+          </div>
         </div>
       </div>
     </footer>
 
     <script>
       const loader = document.getElementById("loader");
+      document.body.style.overflow = "hidden";
       setTimeout(() => {
         loader.style.display = "none";
+        document.body.style.overflow = "auto";
       }, 2000);
     </script>
   </body>

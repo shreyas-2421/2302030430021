@@ -33,14 +33,14 @@
     <!-- loader -->
     <div
       id="loader"
-      class="position-absolute bg-white"
-      style="height: 120%; width: 100%; display: block; overflow: hidden;"
+      class="position-absolute bg-white overflow-hidden"
+      style="height: 120%; width: 100%; display: block; overflow: hidden"
     >
       <div class="w-100 h-100 d-flex justify-content-center align-items-center">
         <img src="../public/loader.gif" />
       </div>
     </div>
-    
+
     <!-- navbar -->
     <header style="max-width: 1920px">
       <nav class="navbar navbar-expand-lg bg-white position-fixed w-100">
@@ -75,9 +75,7 @@
                 <a class="nav-link fw-bold" href="/Html/">Our Story</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link fw-bold" href="/Html/"
-                  >Product List</a
-                >
+                <a class="nav-link fw-bold" href="/Html/">Product List</a>
               </li>
               <li class="nav-item me-3">
                 <a href="/Html/Login.html">
@@ -163,7 +161,12 @@
         <div class="d-flex justify-content-center">
           <button
             class="btn rounded-4 text-white fs-4 my-5 get-started-btn"
-            style="background-image: url(../public/aboutUs/btn-bg.jpg); font-family: Irish Geover; background-size: cover; background-repeat: no-repeat;"
+            style="
+              background-image: url(../public/aboutUs/btn-bg.jpg);
+              font-family: Irish Geover;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
           >
             Get Started
           </button>
@@ -192,7 +195,7 @@
           <ul style="list-style-type: none">
             <li class="text-secondary">Explore</li>
             <li class="text-white pt-3">
-              <a href="/Html/" class="nav-link">Blog</a>
+              <a href="/Html/Blog.html" class="nav-link">Blog</a>
             </li>
           </ul>
         </div>
@@ -209,21 +212,25 @@
         </div>
       </div>
       <div
-        class="d-flex justify-content-between border-top border-1 border-secondary pt-2"
+        class="border-top border-1 border-secondary pt-2"
       >
-        <p class="text-secondary">© 2022 Welcome. All right reserved.</p>
-        <div>
-          <img class="mx-2" src="../public/youtube.svg" alt="" />
-          <img class="mx-2" src="../public/twiiter.svg" alt="" />
-          <img class="mx-2" src="../public/linkdin.svg" alt="" />
+        <div class="mx-5 d-flex justify-content-between">
+          <p class="text-secondary">© 2022 Welcome. All right reserved.</p>
+          <div>
+            <img class="mx-2" src="../public/youtube.svg" alt="" />
+            <img class="mx-2" src="../public/twiiter.svg" alt="" />
+            <img class="mx-2" src="../public/linkdin.svg" alt="" />
+          </div>
         </div>
       </div>
     </footer>
-    
+
     <script>
       const loader = document.getElementById("loader");
+      document.body.style.overflow = "hidden";
       setTimeout(() => {
         loader.style.display = "none";
+        document.body.style.overflow = "auto";
       }, 2000);
     </script>
   </body>
