@@ -100,7 +100,7 @@
 
               <!-- login button -->
               <div>
-                <button class="login-btn">Sign Up</button>
+                <button class="login-btn" onclick="btn()">Sign Up</button>
                 </span>
               </div>
 
@@ -136,7 +136,7 @@
               <div class="mt-5">
                 <span style="color: #adb0cd"
                   >Already have an account? 
-                  <a href="../Html/Login.html" class="sign-up-link"
+                  <a href="Login.html" class="sign-up-link"
                     >Log In</a
                   ></span
                 >
@@ -154,6 +154,9 @@
         loader.style.display = "none";
         document.body.style.overflow = "auto";
       }, 2000);
+      function btn () {
+        window.location.href = "index.html";
+      }
     </script>
   </body>
 </html>

@@ -76,9 +76,9 @@
 
               <!-- login button -->
               <div>
-                <button class="login-btn">Log In</button>
+                <button class="login-btn" onclick="btn();">Log In</button>
                 <span class="w-100 d-flex justify-content-end">
-                  <a href="../Html/Forgot-password.html" class="forgot-link"
+                  <a href="Forgot-password.html" class="forgot-link"
                     >Forgot Password ?</a
                   >
                 </span>
@@ -116,7 +116,7 @@
               <div class="mt-5">
                 <span style="color: #adb0cd"
                   >Don't have an account?
-                  <a href="../Html/Sign-up.html" class="sign-up-link"
+                  <a href="Sign-up.html" class="sign-up-link"
                     >Sign Up</a
                   ></span
                 >
@@ -146,6 +146,9 @@
         loader.style.display = "none";
         document.body.style.overflow = "auto";
       }, 2000);
+      function btn () {
+        window.location.href = "index.html";
+      }
     </script>
   </body>
 </html>
